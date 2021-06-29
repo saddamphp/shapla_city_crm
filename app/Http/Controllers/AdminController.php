@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\User;
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -16,6 +16,7 @@ use Laravel\Fortify\Contracts\LogoutResponse;
 use Laravel\Fortify\Features;
 use Laravel\Fortify\Fortify;
 use Laravel\Fortify\Http\Requests\LoginRequest;
+
 
 class AdminController extends Controller
 {
@@ -109,6 +110,13 @@ class AdminController extends Controller
         $request->session()->regenerateToken();
 
         return app(LogoutResponse::class);
+    }
+
+    public function all_member()
+    {
+        $user = user::orderBy('id','DESC')->get();
+          
+                return view('admin.all_member',compact('user'));
     }
 }
 

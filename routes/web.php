@@ -40,7 +40,10 @@ Route::get('/home',function()
 {
     return view('admin.index');
 });
-Route::get('/all',function()
+Route::get('/all', [AdminController::class, 'all_member']);
+
+Route::get('/member/{id}',function($id)
 {
-    return view('admin.all_member');
+    return view('admin.admin_member_profile');
 });
+

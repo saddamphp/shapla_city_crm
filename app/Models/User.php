@@ -45,6 +45,8 @@ class User extends Authenticatable
         'two_factor_secret',
     ];
 
+    
+
     /**
      * The attributes that should be cast to native types.
      *
