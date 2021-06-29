@@ -13,7 +13,7 @@
         <img src="{{ asset('backend/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
-        <a href="#" class="d-block">Alexander Pierce</a>
+        <a href="#" class="d-block">User Name</a>
       </div>
     </div>
 
@@ -34,44 +34,38 @@
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <!-- Add icons to the links using the .nav-icon class
              with font-awesome or any other icon font library -->
-        <li class="nav-item menu-open">
-          <a href="#" class="nav-link active">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>
-              Dashboard
-              <i class="right fas fa-angle-left"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link active">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Dashboard v1</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="./index2.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Dashboard v2</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="./index3.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Dashboard v3</p>
-              </a>
-            </li>
-          </ul>
-        </li>
+       
+
+        <!-- SIDEBAR-->
         <li class="nav-item">
           <a href="pages/widgets.html" class="nav-link">
             <i class="nav-icon fas fa-th"></i>
-            <p>
-              Widgets
-              <span class="right badge badge-danger">New</span>
+            <p> <!-- SIDEBAR - HOME -->
+              Home
             </p>
           </a>
+          <a href="#" class="nav-link">
+            <i class="nav-icon far fa-plus-square"></i>
+            <p>
+              Add Member
+            </p>
+          </a>
+          <a href="#" class="nav-link">
+            <i class="nav-icon far fa-plus-square"></i>
+            <p>
+              View Member
+            </p>
+          </a>
+          <a href="#" class="nav-link">
+            <i class="nav-icon far fa-plus-square"></i>
+            <p>
+              Report
+            </p>
+          </a>
+          
         </li>
+
+        <!-- 
         <li class="nav-item">
           <a href="#" class="nav-link">
             <i class="nav-icon fas fa-copy"></i>
@@ -665,6 +659,7 @@
             <p>Informational</p>
           </a>
         </li>
+      -->
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
